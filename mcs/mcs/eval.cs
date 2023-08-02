@@ -427,7 +427,7 @@ namespace Mono.CSharp
 
 				var access = AssemblyBuilderAccess.RunAndCollect;
 				var a = new AssemblyDefinitionDynamic (module, "completions");
-				a.Create (AppDomain.CurrentDomain, access);
+				a.Create (access);
 				module.SetDeclaringAssembly (a);
 
 				// Need to setup MemberCache
@@ -704,7 +704,7 @@ namespace Mono.CSharp
 				assembly = new AssemblyDefinitionDynamic (module, current_debug_name);
 			}
 
-			assembly.Create (AppDomain.CurrentDomain, access);
+			assembly.Create (access);
 
 			Method expression_method;
 			if (host != null) {

@@ -736,7 +736,7 @@ namespace Mono.CSharp {
 #if STATIC
 					MethodBuilder.__AddDeclarativeSecurity (de);
 #else
-					MethodBuilder.AddDeclarativeSecurity (de.Key, de.Value);
+					//MethodBuilder.AddDeclarativeSecurity (de.Key, de.Value);
 #endif
 				}
 			}
@@ -1822,7 +1822,7 @@ namespace Mono.CSharp {
 #if STATIC
 					ConstructorBuilder.__AddDeclarativeSecurity (de);
 #else
-					ConstructorBuilder.AddDeclarativeSecurity (de.Key, de.Value);
+					//ConstructorBuilder.AddDeclarativeSecurity (de.Key, de.Value);
 #endif
 				}
 			}
@@ -2485,7 +2485,7 @@ namespace Mono.CSharp {
 #if STATIC
 					method_data.MethodBuilder.__AddDeclarativeSecurity (de);
 #else
-					method_data.MethodBuilder.AddDeclarativeSecurity (de.Key, de.Value);
+					//method_data.MethodBuilder.AddDeclarativeSecurity (de.Key, de.Value);
 #endif
 				}
 			}
